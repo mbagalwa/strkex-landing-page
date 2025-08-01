@@ -1,6 +1,6 @@
 <template>
       <div :class="cn(
-            'group relative w-auto cursor-pointer overflow-hidden rounded-md border bg-background p-2 px-5 text-center font-semibold',
+            'group relative w-auto cursor-pointer overflow-hidden rounded-md border bg-background px-5 py-1.5 text-center font-semibold',
             props.class,
       )
             ">

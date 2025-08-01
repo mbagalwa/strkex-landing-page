@@ -28,20 +28,17 @@ const stats = [
 ]
 
 
-
 </script>
 
 <template>
       <div class="relative overflow-hidden">
-            <div
-                  class="absolute inset-0 bg-gradient-to-br from-background to-gray-50/50 dark:from-background dark:to-gray-900/50">
-                  <ParticlesBg class="absolute inset-0 animate-particles" :color="'var(--color-primary)'" :quantity="150" :staticity="40" :ease="25" />
+            <div class="absolute inset-0">
+                  <ParticlesBg class="absolute inset-0 animate-particles" :color="'var(--color-primary)'"
+                        :quantity="150" :staticity="40" :ease="25" />
             </div>
 
-
-            <div
-                  class="relative max-w-7xl w-full mx-2 lg:mx-auto  before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:border before:border-dashed before:border-gray-200/60 after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-px after:border-1 after:border-dashed after:border-gray-200/60 min-h-[calc(80vh-64px)] py-16 ">
-                  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-base-style min-h-[calc(80vh-64px)]">
+                  <div class="max-w-7xl mx-auto px-4  sm:px-6 lg:px-8">
                         <div class="relative">
                               <!-- Hero content -->
                               <HeroContent />
@@ -65,34 +62,3 @@ const stats = [
             </div>
       </div>
 </template>
-
-<!-- <script lang="ts">
-export default {
-      data() {
-            return {
-                  stats: [
-                        {
-                              id: 1,
-                              value: '100+',
-                              label: 'Supported Tokens'
-                        },
-                        {
-                              id: 2,
-                              value: '1000+',
-                              label: 'Active Users'
-                        },
-                        {
-                              id: 3,
-                              value: '100%',
-                              label: 'Security Guarantee'
-                        },
-                        {
-                              id: 4,
-                              value: '24/7',
-                              label: 'Customer Support'
-                        }
-                  ]
-            }
-      }
-}
-</script> -->

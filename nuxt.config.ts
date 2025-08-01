@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/fonts",
     "shadcn-nuxt",
+    "nuxt-svgo",
   ],
   icon: {
     serverBundle: {

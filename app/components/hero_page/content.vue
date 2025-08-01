@@ -50,19 +50,21 @@ onBeforeUnmount(() => {
                               Competitive fees and intuitive interface for a smooth experience.
                         </p>
 
-                        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                        <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                               <button
-                                    class="inline-flex items-center px-6 py-3.5 rounded-xl text-lg font-semibold bg-gradient-to-r from-primary to-primary/90 text-white hover:from-primary/90 hover:to-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-300 ease-in-out relative overflow-hidden group">
-                                    <span class="relative z-10">Get Started</span>
-                                    <span class="absolute inset-0 bg-starknet-ex/5 rounded-xl transform-gpu transition-transform duration-300 ease-in-out group-hover:scale-110"></span>
-                                    <Icon name="solar:arrow-right-broken" class="ml-2 relative z-10" />
+                                    class="inline-flex items-center px-4 py-2.5 rounded-lg text-sm font-medium bg-gradient-to-r from-primary to-primary/90 text-white hover:from-primary/90 hover:to-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-300 ease-in-out relative overflow-hidden group cursor-pointer">
+                                    <Icon name="hugeicons:ai-magic" class="relative text-xl" />
+                                    <span class="relative z-10 ml-1.5">Get Started</span>
+                                    <span
+                                          class="absolute inset-0 bg-starknet-ex/5 rounded-lg transform-gpu transition-transform duration-300 ease-in-out group-hover:scale-110"></span>
                               </button>
 
                               <button
-                                    class="inline-flex items-center px-6 py-3.5 rounded-xl text-lg font-semibold bg-white/95 text-gray-900 hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-300 ease-in-out relative overflow-hidden group">
-                                    <Icon name="solar:info-circle-broken" class="mr-2 relative z-10" />
+                                    class="inline-flex items-center px-4 py-2.5 rounded-lg text-sm font-medium bg-white/95 text-gray-900 hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-300 ease-in-out relative overflow-hidden group cursor-pointer">
+                                    <Icon name="solar:info-circle-broken" class="mr-1.5 relative z-10" />
                                     <span class="relative z-10">Learn More</span>
-                                    <span class="absolute inset-0 bg-starknet-ex/5 rounded-xl transform-gpu transition-transform duration-300 ease-in-out group-hover:scale-110"></span>
+                                    <span
+                                          class="absolute inset-0 bg-starknet-ex/5 rounded-lg transform-gpu transition-transform duration-300 ease-in-out group-hover:scale-110"></span>
                               </button>
                         </div>
                   </div>
