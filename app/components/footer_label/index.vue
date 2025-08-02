@@ -82,7 +82,7 @@ const dots = [
 
                                     <div class="flex flex-col">
                                           <span class="text-gray-400 mr-auto text-xs">Fast transfer</span>
-                                          <span class="mr-auto text-xs font-medium">StarkNet → Local Currency</span>
+                                          <span class="mr-auto text-xs font-medium">STRK → Local Currency</span>
                                     </div>
                               </div>
                               <div class="flex items-center  mb-2 gap-1">

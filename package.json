@@ -29,7 +29,8 @@
     "tailwindcss": "^4.1.11",
     "theme-colors": "^0.1.0",
     "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "vue-use-spring": "^0.3.3"
   },
   "packageManager": "pnpm@9.6.0+sha1.65cd48c20dd329b7f455088b6dd17d4d5b6d02e3",
   "devDependencies": {

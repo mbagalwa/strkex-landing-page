@@ -127,20 +127,41 @@
       --color-starknet-ex: var(--color-logo);
       --animate-accordion-down: accordion-down 0.2s ease-out;
       --animate-accordion-up: accordion-up 0.2s ease-out;
-  @keyframes accordion-down {
-  from {
-    height: 0;
+      --animate-meteor-effect: meteor 5s linear infinite;
+
+      @keyframes meteor {
+            0% {
+                  transform: rotate(215deg) translateX(0);
+                  opacity: 1;
             }
-  to {
-    height: var(--reka-accordion-content-height);
+
+            70% {
+                  opacity: 1;
+            }
+
+            100% {
+                  transform: rotate(215deg) translateX(-500px);
+                  opacity: 0;
             }
       }
-  @keyframes accordion-up {
-  from {
-    height: var(--reka-accordion-content-height);
+
+      @keyframes accordion-down {
+            from {
+                  height: 0;
             }
-  to {
-    height: 0;
+
+            to {
+                  height: var(--reka-accordion-content-height);
+            }
+      }
+
+      @keyframes accordion-up {
+            from {
+                  height: var(--reka-accordion-content-height);
+            }
+
+            to {
+                  height: 0;
             }
       }
 }
@@ -161,12 +182,97 @@
       }
 
       .section-base-style {
-            @apply relative max-w-7xl w-full mx-2 lg:mx-auto before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:border before:border-dashed before:border-gray-200/60 after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-px after:border-1 after:border-dashed after:border-gray-200/60 py-16;
+            @apply relative max-w-7xl w-full mx-2 lg:mx-auto py-16;
       }
 
       .section-separator {
             @apply flex-1 border-t border-dashed border-gray-200 dark:border-gray-800;
       }
+
+      .solution-card-style {
+            @apply relative w-full mx-2 lg:mx-auto before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:border before:border-dashed before:border-gray-200/60 after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-px after:border-1 after:border-dashed after:border-gray-200/60
+      }
+
+      /*  */
+      .corner-plus::before,
+      .corner-plus::after,
+      .corner-plus-right::before,
+      .corner-plus-right::after,
+      .corner-b-plus::before,
+      .corner-b-plus::after,
+      .corner-b-plus-right::before,
+      .corner-b-plus-right::after {
+            content: '';
+            position: absolute;
+            background-color: #0000003d;
+            transition: all 0.3s ease;
+      }
+
+
+      /* Top */
+      .corner-plus::before {
+            width: 8px;
+            height: 2px;
+            top: -1.5px;
+            left: -3px;
+      }
+
+
+      .corner-plus::after {
+            width: 2px;
+            height: 8px;
+            top: -4.5px;
+            left: 0px;
+      }
+
+      /* right corner */
+      .corner-plus-right::before {
+            width: 8px;
+            height: 2px;
+            top: -1.5px;
+            right: -3px;
+      }
+
+      .corner-plus-right::after {
+            width: 2px;
+            height: 8px;
+            top: -4.5px;
+            right: 0px;
+      }
+
+      /* Bottom */
+      .corner-b-plus::before {
+            width: 8px;
+            height: 2px;
+            bottom: -1.5px;
+            left: -3px;
+      }
+
+
+      .corner-b-plus::after {
+            width: 2px;
+            height: 8px;
+            bottom: -4.5px;
+            left: 0px;
+      }
+
+      /* right corner */
+      .corner-b-plus-right::before {
+            width: 8px;
+            height: 2px;
+            bottom: -1.5px;
+            right: -3px;
+      }
+
+      .corner-b-plus-right::after {
+            width: 2px;
+            height: 8px;
+            bottom: -4.5px;
+            right: 0px;
+      }
+
+
+
 }
 
 html {

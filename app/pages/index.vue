@@ -7,8 +7,9 @@
             <HeroPage />
             <!-- <div class="flex-1 border-t border-dashed border-gray-200 dark:border-gray-800"></div>
             <Partners /> -->
-            <div class="section-separator"></div>
-            <!-- <WhyUs /> -->
+            <!-- <div class="section-separator"></div> -->
+            <About />
+            <WhyStarknet />
             <Faq />
             <FooterLabel />
       </div>

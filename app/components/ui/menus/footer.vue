@@ -57,7 +57,7 @@ const navigation = {
 </script>
 
 <template>
-      <footer class="relative bg-gray-100/70 text-gray-900 py-12 flex justify-center">
+      <footer class="relative bg-gray-100/70 text-gray-900 py-8 flex justify-center">
             <div class="relative max-w-7xl w-full px-4 sm:px-6">
                   <div
                         class="rounded-xl px-6 py-10 flex flex-col md:flex-row md:justify-between md:items-start gap-8 lg:grid lg:grid-cols-2">
@@ -128,7 +128,7 @@ const navigation = {
                   </div>
 
                   <!-- Nouveau watermark -->
-                  <div class="py-10 flex justify-center text-gray-900/5">
+                  <div class="py-8 flex justify-center text-gray-900/5">
                         <span
                               class="text-7xl md:text-8xl lg:text-9xl font-extrabold  bg-gradient-to-b from-gray-900/10 to-transparent bg-clip-text text-transparent select-none pointer-events-none uppercase">
                               starkex

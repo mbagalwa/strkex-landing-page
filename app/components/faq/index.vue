@@ -34,7 +34,7 @@ const accordionItems = [
 <template>
 
       <div>
-            <div class="max-w-5xl mx-auto pt-16">
+            <div class="max-w-5xl mx-auto my-12">
                   <div class="flex gap-14">
                         <div class="w-full md:w-2/5">
                               <div class="flex flex-col gap-8">
@@ -58,7 +58,7 @@ const accordionItems = [
                                                 questions you may have. Quick and friendly support guaranteed.</span>
                                           <div>
                                                 <button
-                                                      class="inline-flex items-center gap-2 bg-starknet-ex/70 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-starknet-ex/90 hover:text-white transition-all duration-200 cursor-pointer">
+                                                      class="inline-flex items-center gap-2 bg-starknet-ex/70 text-white px-7 py-2 rounded text-sm font-semibold hover:bg-starknet-ex/90 hover:text-white transition-all duration-200 cursor-pointer">
                                                       <Icon name="mage:phone-outgoing-fill" class="text-xl" />
                                                       Contact our team
                                                 </button>
