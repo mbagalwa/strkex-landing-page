@@ -24,6 +24,9 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   vite: {
     plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: ["dotted-map"],
+    },
   },
   fonts: {
     priority: ["Space Grotesk", "Manrope"],
