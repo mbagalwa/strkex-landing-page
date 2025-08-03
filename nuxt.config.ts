@@ -16,6 +16,9 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "nuxt-svgo",
   ],
+  build: {
+    transpile: ["dotted-map"],
+  },
   icon: {
     serverBundle: {
       collections: ["hugeicons", "mage", "solar"],
@@ -58,6 +61,6 @@ export default defineNuxtConfig({
   },
   shadcn: {
     prefix: "",
-    componentDir: "./app/components/ui",
+    componentDir: "./components/ui",
   },
 });
