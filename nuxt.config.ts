@@ -27,6 +27,9 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ["dotted-map"],
     },
+    server: {
+      allowedHosts: ["preview-starkex.himbimarket.net"],
+    },
   },
   fonts: {
     priority: ["Space Grotesk", "Manrope"],
