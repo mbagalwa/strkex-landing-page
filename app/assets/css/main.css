@@ -193,6 +193,20 @@
             @apply relative w-full mx-2 lg:mx-auto before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:border before:border-dashed before:border-gray-200/60 after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-px after:border-1 after:border-dashed after:border-gray-200/60
       }
 
+      .section-title {
+            @apply text-3xl md:text-3xl font-semibold text-gray-900 lg:w-[70%]
+      }
+
+      .section-description {
+            @apply mt-1.5 text-gray-600 text-base
+      }
+
+
+      .primary-border-style {
+            @apply border-[.5px] border-gray-200/50;
+      }
+
+
       /*  */
       .corner-plus::before,
       .corner-plus::after,

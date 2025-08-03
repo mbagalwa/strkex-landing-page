@@ -45,7 +45,7 @@ const set_active_section = (section = 0) => {
 </script>
 
 <template>
-      <nav class="flex justify-between bg-background/90 min-h-16 font-sans">
+      <!-- <nav class="flex justify-between bg-background/90 min-h-16 font-sans">
             <div
                   class="max-w-7xl w-full mx-2 lg:mx-auto relative before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:border before:border-dashed before:border-gray-200/60 after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-px after:border-1 after:border-dashed after:border-gray-200/60">
                   <div
@@ -82,6 +82,50 @@ const set_active_section = (section = 0) => {
                               </UiMenusNavButton>
                         </div>
                   </div>
+            </div>
+      </nav> -->
+
+      <nav class="flex justify-between bg-background/90 min-h-16 font-sans">
+            <div class="max-w-7xl w-full mx-2 lg:mx-auto relative">
+
+                  <div
+                        class="flex items-center justify-between gap-3 max-w-4xl  w-full mx-2 lg:mx-auto p-3.5 md:p-5 lg:p-6">
+                        <div
+                              class="flex-1 flex items-center gap-12 bg-gray-100/40 border-[.5px] border-gray-200 rounded-md px-4 py-2">
+                              <div class="flex items-center gap-12">
+                                    <div class="flex items-center gap-2">
+                                          <NuxtImg src="/logo.png" alt="Logo" width="32" height="32" quality="100" />
+                                          <span class="text-[.85rem] font-bold mt-1">StarkEx</span>
+                                    </div>
+                              </div>
+
+                              <ul class="hidden lg:flex gap-6">
+                                    <li @click.prevent="set_active_section(menu.id)" v-for="menu in menus"
+                                          :key="menu.id" class="flex items-center font-medium">
+                                          <NuxtLink :to="menu.href"
+                                                class="text-[.845rem] hover:opacity-100 hover:font-semibold transition-all duration-500 font-medium"
+                                                :class="menu.id === active_section ? 'opacity-100 font-semibold' : 'opacity-70'">
+                                                <div
+                                                      class="flex flex-col items-center  relative transition-all duration-300 space-y-0">
+                                                      <span> {{ menu.label }}</span>
+                                                      <div :class="menu.id === active_section ? 'block' : 'hidden'"
+                                                            class=" size-1.5 scale-100 rounded-lg bg-primary transition-all duration-300 -mb-0.5">
+                                                      </div>
+                                                </div>
+                                          </NuxtLink>
+                                    </li>
+                              </ul>
+
+
+                        </div>
+                        <div class="flex items-center gap-1">
+                              <button
+                                    class="py-3 px-3 rounded-md  border-[.5px] border-gray-200 cursor-pointer transition-all duration-300 ease-in-out  flex items-center gap-1 bg-starknet-ex text-white">
+                                    <Icon name="solar:user-rounded-bold" class="text-xl" />
+                              </button>
+                        </div>
+                  </div>
+
             </div>
       </nav>
 </template>

@@ -55,14 +55,14 @@ const dummyContent = [
 </script>
 
 <template>
-      <div class="py-16">
-            <div class="max-w-5xl mx-auto flex flex-col  items-center gap-10 py-8">
+      <div class="">
+            <div class="max-w-5xl mx-auto flex flex-col  items-center gap-10">
                   <!-- Header -->
-                  <div class="flex flex-col items-center text-center gap-3 px-4">
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+                  <div class="flex flex-col items-center text-center  px-4">
+                        <h2 class="section-title">
                               Why Starknet ?
                         </h2>
-                        <p class="text-gray-600 text-base max-w-md">
+                        <p class="section-description w-2/3">
                               Discover why Starknet is the go-to solution for scalable, secure and developer-friendly
                               Web3 applications.
                         </p>
@@ -71,17 +71,17 @@ const dummyContent = [
                   <!-- Content -->
                   <div class="px-4 max-w-5xl w-full space-y-3">
                         <div class="w-full grid grid-cols-5 grid-flow-row-dense  gap-3">
-                              <div class="bg-gray-100/70 h-80 rounded-md col-span-2 border-[.5px] border-gray-200">01
+                              <div class="bg-gray-100/50 h-80 rounded-md col-span-2 primary-border-style">01
                               </div>
-                              <div class="bg-gray-100/70 h-80 rounded-md col-span-3 border-[.5px] border-gray-200">02
+                              <div class="bg-gray-100/50 h-80 rounded-md col-span-3 primary-border-style">02
                               </div>
                         </div>
                         <div class="w-full grid grid-cols-11 grid-flow-row-dense  gap-3">
-                              <div class="bg-gray-100/70 h-80 rounded-md col-span-3 border-[.5px] border-gray-200">05
+                              <div class="bg-gray-100/50 h-80 rounded-md col-span-3 primary-border-style">05
                               </div>
-                              <div class="bg-gray-100/70 h-80 rounded-md col-span-4 border-[.5px] border-gray-200">06
+                              <div class="bg-gray-100/50 h-80 rounded-md col-span-4 primary-border-style">06
                               </div>
-                              <div class=" bg-gray-100/70 h-80 rounded-md col-span-4 border-[.5px] border-gray-200">07
+                              <div class=" bg-gray-100/50 h-80 rounded-md col-span-4 primary-border-style">07
                               </div>
                         </div>
                   </div>
