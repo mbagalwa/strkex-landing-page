@@ -1,6 +1,6 @@
 <template>
   <div ref="containerRef"
-    class="relative flex min-h-[60rem] items-center justify-center px-2 md:max-h-[80rem] md:p-0 max-w-7xl mx-auto">
+    class="relative flex  items-center justify-center  md:max-h-[80rem] px-5 max-w-7xl mx-auto pb-5 mb-3">
     <div class="relative w-full py-0" style="perspective: 1000px">
       <ContainerScrollTitle :translate="translateY">
         <slot name="title"></slot>

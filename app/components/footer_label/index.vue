@@ -39,11 +39,9 @@ const dots = [
 </script>
 <template>
 
-      <div class="max-w-5xl mx-auto py-20">
-
-
+      <div class="max-w-5xl mx-auto">
             <div
-                  class="relative bg-gray-50/70 rounded-2xl px-6 py-20 flex flex-col md:flex-row items-center justify-between overflow-hidden border-[.5px] border-gray-200">
+                  class="relative bg-gray-50/70 rounded-xl px-6 py-20 flex flex-col md:flex-row items-center justify-between overflow-hidden primary-border-style">
                   <!-- Left -->
                   <div class="md:w-1/2 space-y-8 mb-8 md:mb-0">
                         <div class="flex items-center justify-center w-12 h-12 bg-[#F06226] rounded-full">
@@ -54,9 +52,9 @@ const dots = [
                                           d="M3 10h18M3 6h18M4 14h16M4 18h16" />
                               </svg>
                         </div>
-                        <h3 class="text-2xl font-semibold text-gray-900 w-[60%]">Échanges crypto partout en Afrique
+                        <h3 class="section-title w-[60%]">Échanges crypto partout en Afrique
                         </h3>
-                        <p class="text-gray-600">
+                        <p class="section-description">
                               Enjoy fast, secure and fee-free transactions worldwide with Starkex. Leverage cutting-edge
                               blockchain technology to transfer assets across borders in seconds.
                         </p>

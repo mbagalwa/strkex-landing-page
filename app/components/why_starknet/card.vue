@@ -13,33 +13,11 @@ defineProps<{
 
 <template>
       <div class="p-0 flex flex-col gap-4">
-
-
-            <!-- <div class="inline-block w-fit rounded-full bg-[#F06226]/10 text-[#F06226] text-xs font-semibold px-3 py-1">
-                  {{ input.badge }}
-            </div>
-
-
-            <h3 class="text-lg font-semibold text-gray-900">
-                  {{ input.title }}
-            </h3>
-
-
-            <NuxtImg v-if="input.image" :src="input.image" alt="thumbnail"
-                  class="rounded-lg object-cover w-full h-48" />
-
-
-            <div class="space-y-2 text-gray-700 text-sm leading-relaxed">
-                  <p v-for="(paragraph, idx) in input.description" :key="`desc-${idx}`">
-                        {{ paragraph }}
-                  </p>
-            </div> -->
-
             <ClientOnly>
                   <div class="flex w-full flex-col items-center justify-center py-0">
                         <div class="relative w-full max-w-5xl">
                               <div
-                                    class="absolute inset-0 size-full scale-[0.80] rounded-full bg-red-500 bg-gradient-to-r from-blue-500 to-teal-500 blur-3xl" />
+                                    class="absolute inset-0 size-full scale-[0.80] rounded-full  bg-gradient-to-r from-blue-500 to-teal-500 blur-3xl" />
                               <div
                                     class="relative flex h-full flex-col items-start justify-end overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 px-4 py-8 shadow-xl">
                                     <div

@@ -3,14 +3,13 @@
 
 <template>
       <div
-            class="flex flex-col min-h-screen bg-gradient-to-br from-background to-gray-50/50 dark:from-background dark:to-gray-900/50">
+            class="flex flex-col min-h-screen bg-gradient-to-br from-background to-gray-50/50 dark:from-background dark:to-gray-900/50 space-y-28 pb-28">
             <HeroPage />
-            <!-- <div class="flex-1 border-t border-dashed border-gray-200 dark:border-gray-800"></div>
-            <Partners /> -->
-            <!-- <div class="section-separator"></div> -->
+            <!-- <Operators /> -->
             <About />
-            <WhyStarknet />
+            <!-- <WhyStarknet /> -->
             <Faq />
+            <Testimony />
             <FooterLabel />
       </div>
 </template>

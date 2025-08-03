@@ -10,7 +10,7 @@
     <div v-if="isVisible" ref="preview" class="pointer-events-none absolute z-50" :style="previewStyle">
       <div class="overflow-hidden rounded-xl shadow-xl" :class="[popClass, { 'transform-gpu': !props.isStatic }]">
         <div class="block rounded-xl border-2 border-transparent bg-white p-1 shadow-lg dark:bg-gray-900">
-          <img :src="previewSrc" :width="width" :height="height" class="size-full rounded-lg object-cover"
+          <NuxtImg :src="previewSrc" :width="width" :height="height" class="size-full rounded-lg object-cover"
             :style="imageStyle" alt="preview" @load="handleImageLoad" />
         </div>
       </div>
