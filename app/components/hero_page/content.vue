@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { LinkPreview } from '@/components/ui/link-preview'
 
 const isMobile = ref(false)
 const containerRef = ref<HTMLElement | null>(null)
@@ -27,7 +26,8 @@ onBeforeUnmount(() => {
                               class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white space-y-2 md:space-y-4 animate-fade-in">
                               <span class="block">
                                     Exchange your
-                                    <LinkPreview url="https://starknet.io"
+
+                                    <UiLinkPreview url="https://starknet.io"
                                           class="text-starknet-ex/80 font-semibold hover:underline inline-flex items-center"
                                           showPreview="false">
                                           <div
@@ -36,7 +36,7 @@ onBeforeUnmount(() => {
                                                       height="28" class="w-6 h-6 md:w-8 md:h-8 flex-shrink-0" />
                                                 <span class="text-base md:text-lg text-starknet-ex/70">StarkNet</span>
                                           </div>
-                                    </LinkPreview>
+                                    </UiLinkPreview>
                               </span>
                               <span
                                     class="block px-2 sm:px-4 md:px-20 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-gray-700 dark:text-gray-300">
