@@ -39,7 +39,7 @@ const dots = [
 </script>
 <template>
 
-      <div class="max-w-5xl mx-auto">
+      <div class="max-w-5xl mx-auto px-5 lg:px-0">
             <div
                   class="relative bg-gray-50/70 rounded-xl px-6 py-20 flex flex-col md:flex-row items-center justify-between overflow-hidden primary-border-style">
                   <!-- Left -->
@@ -64,7 +64,12 @@ const dots = [
                   <div class="relative md:w-1/2 flex justify-center items-center">
                         <!-- Carte du monde en fond -->
                         <div class="absolute inset-0 flex justify-center items-center">
-                              <UiWorldMap :dots="dots" map-color="#00000040" map-bg-color="transparent" />
+                              <!-- <ClientOnly>
+                                    <WorldMap :dots="dots" map-color="#00000040" map-bg-color="transparent" />
+                              </ClientOnly> -->
+
+                              <NuxtImg src="https://simplemaps.com/static/demos/resources/svg-library/svgs/world.svg"
+                                    alt="World Map" />
                         </div>
 
                         <!-- Card transfert -->

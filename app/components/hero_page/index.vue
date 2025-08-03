@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import HeroContent from './content.vue'
-import ParticlesBg from '@/components/ui/utils/particles_bg.vue'
+import ParticlesBg from './particles_bg.vue'
 import { useDevicePixelRatio } from '@vueuse/core'
-// import 'aos/dist/aos.css'
 
 const { pixelRatio } = useDevicePixelRatio()
 

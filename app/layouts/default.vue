@@ -3,8 +3,8 @@
 <template>
   <div class="flex flex-col min-h-screen ">
 
-    <UiMenusNavbar />
+    <MenusNavbar />
     <slot />
-    <UiMenusFooter />
+    <MenusFooter />
   </div>
 </template>
