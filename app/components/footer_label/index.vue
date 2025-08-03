@@ -61,7 +61,7 @@ const dots = [
                   </div>
 
                   <!-- Right -->
-                  <div class="relative md:w-1/2 flex justify-center items-center">
+                  <div class="relative w-full md:w-1/2 flex justify-center items-center">
                         <!-- Carte du monde en fond -->
                         <div class="absolute inset-0 flex justify-center items-center">
                               <!-- <ClientOnly>
@@ -69,7 +69,7 @@ const dots = [
                               </ClientOnly> -->
 
                               <NuxtImg src="https://simplemaps.com/static/demos/resources/svg-library/svgs/world.svg"
-                                    alt="World Map" />
+                                    alt="World Map" class="w-full h-full object-contain" />
                         </div>
 
                         <!-- Card transfert -->
